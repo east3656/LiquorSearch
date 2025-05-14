@@ -3,3 +3,4 @@ package-lock.json
 init.sql
 test.sql
 testdel.sql
+src/main/resources/application.properties
