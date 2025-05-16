@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) //this is a tester to be ran on the IDE directly, without spring-booting the server. ignore AppTest.java
     {
         //initialize credentials to connect to postgresql dbms.
 

@@ -21,4 +21,26 @@ public class Liquor {
         quantity=e;
 
     }
+
+    public int getId(){
+        return id;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public String getContainerType(){
+        return containerType;
+    }
+
+    public BigDecimal getAbv(){
+        return abv;
+    }
+
+    public int getQuantity(){
+        return quantity;
+    }
+
+
 }

@@ -7,6 +7,16 @@
   <version>1.0-SNAPSHOT</version>
   <name>LiquorSearch</name>
   <url>http://maven.apache.org</url>
+
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.1.2</version>
+    <relativePath/>
+  </parent> <!-- will manage the spring-boot-for-maven plugins' version for us-->
+
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -23,14 +33,12 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId> <!-- Spring FOR REST CONTROLLERS !!!-->
-      <version>3.2.8</version>
     </dependency>
 
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-jdbc</artifactId> <!-- Spring for connecting to JDBC template from our datasource-->
-      <version>3.4.5</version>
     </dependency>
 
 
@@ -42,6 +50,12 @@
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
   <build>
-
-  </build>
+  <plugins> 
+    <plugin>    <!-- Spring Boot Maven Plugin -->
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+      <!-- no <version> needed if you’re using the spring-boot-starter-parent -->
+    </plugin>
+  </plugins>
+</build>
 </project>
