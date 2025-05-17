@@ -54,7 +54,6 @@
     <plugin>    <!-- Spring Boot Maven Plugin -->
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-maven-plugin</artifactId>
-      <!-- no <version> needed if you’re using the spring-boot-starter-parent -->
     </plugin>
   </plugins>
 </build>

@@ -21,4 +21,6 @@ public class LiquorController{
         return dao.findAll(); //DAO will automatically try to search for all available mappings of our returned liquors from dbms.
     }
 
+   
+
 }
