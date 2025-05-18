@@ -13,7 +13,7 @@ body, html {
 .main-area.sidebar-closed { margin-left: 50px;  }
 
 
-.liquor-grid {
+.liquor-grid { /*each liquor is inserted into one of these.*/
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 1rem;

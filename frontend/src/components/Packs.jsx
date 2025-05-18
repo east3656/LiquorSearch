@@ -1,4 +1,5 @@
 import React from 'react';
+import LiquorList from './LiquorList';
 export default function Packs() {
-  return <div>Packs content goes here.</div>;
+  return <LiquorList filter='pack' />;
 }

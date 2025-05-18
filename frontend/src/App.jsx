@@ -45,6 +45,8 @@ export default function App() {
         <h2>{selected}</h2>
         <Content />
       </div>
+
+      <LiquorList/>
     </>
   );
 }
