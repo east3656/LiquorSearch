@@ -1,0 +1,41 @@
+body, html {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.main-area {
+  padding: 1rem 2rem;
+  transition: margin-left 0.3s;
+}
+
+/* shift content depending on sidebar state */
+.main-area.sidebar-open   { margin-left: 200px; }
+.main-area.sidebar-closed { margin-left: 50px;  }
+
+
+.liquor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.liquor-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.liquor-card__img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0.5rem;
+}
+
+.liquor-card__name {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}

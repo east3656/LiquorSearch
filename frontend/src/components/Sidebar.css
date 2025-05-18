@@ -1,0 +1,31 @@
+.sidebar {
+  position: fixed;
+  top: 3.5rem;   /* height of header (0.5rem padding + ~2rem text + padding) */
+  left: 0;
+  bottom: 0;
+  background: #f8f9fa;
+  overflow: hidden;
+  transition: width 0.3s;
+  box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+}
+
+.sidebar.open   { width: 200px; }
+.sidebar.closed { width: 0px;  }
+
+.sidebar__list {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.sidebar__item {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.sidebar__item:hover,
+.sidebar__item.active {
+  background: #e2f0d9;
+}
