@@ -5,7 +5,7 @@ export default function LiquorList({filter}) {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8080/api/inventory')
+    fetch('http://localhost:8000/api/inventory')
       .then(res => res.json())
       .then(data => {
         // merge each API item with its local metadata
@@ -19,15 +19,15 @@ export default function LiquorList({filter}) {
       .catch(err => console.error('Fetch error:', err));
   }, []);
 
-   const displayed = filter
-    ? items.filter(item => item.containerType === filter)
+   const displayed = filter //argument filter for sidebar tabs
+    ? items.filter(item => item.containerType.toLowerCase() === filter.toLowerCase())
     : items;
 
   if (items.length === 0) return <p>No items to display.</p>;
 
   return (
     <section className="liquor-grid">
-      {items.map(({ id, name, containerType, abv, quantity, image, volume }) => {
+      {displayed.map(({ id, name, containerType, abv, quantity, image, volume }) => {
         console.log('Rendering image for', name, 'from', image);
         return (
           <div key={id} className="liquor-card">  
