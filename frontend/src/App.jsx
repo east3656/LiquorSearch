@@ -8,15 +8,12 @@ import LiquorList from './components/LiquorList.jsx';
 import './App.css';
 
 export default function App() {
-  const sections = ['Bottles','Cans','Packs'];
+  const sections = ["Bottles","Cans","Packs"];
   const [selected, setSelected] = useState(sections[0]);
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(true); //sidebar is open and bottle section is selected by default on boot. 
 
 
-  localStorage.setItem('liquorList', JSON.stringify([
-  { id:1, name:'Heineken 500ML', containerType:'bottle', abv:5, quantity:12 },
-  { id:2, name:'Heineken 330ML', containerType:'bottle', abv:5, quantity:24 },
-]));
+  
 
   // pick which panel to render
   let Content;
