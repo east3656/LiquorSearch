@@ -30,6 +30,8 @@ export default function App() {
         onToggleSidebar={() => setSidebarOpen(o => !o)}
       />
 
+      
+
       <Sidebar
         open={sidebarOpen}
         sections={sections}
@@ -43,7 +45,6 @@ export default function App() {
         <Content />
       </div>
 
-      <LiquorList/>
     </>
   );
 }

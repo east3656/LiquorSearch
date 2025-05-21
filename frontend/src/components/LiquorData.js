@@ -36,17 +36,17 @@ export const liquorList = {
 
   7: {
     image: '/images/corona-bottle-single.png',
-    containerType: 'pack'
+    containerType: 'bottle'
   },
 
   8: {
     image: '/images/corona-can-355mL.png',
-    containerType: 'pack'
+    containerType: 'can'
   },
 
   9: {
     image: '/images/corona-can-473mL.png',
-    containerType: 'pack'
+    containerType: 'can'
   },
 
   10: {
@@ -63,6 +63,58 @@ export const liquorList = {
     image: '/images/corona-can-355-pack-6.png',
     containerType: 'pack'
   },
+
+  13: {
+    image: '/images/budweiser-can-355mL.png',
+    containerType: 'can'
+  },
+
+  14: {
+    image: '/images/budweiser-can-500mL.png',
+    containerType: 'can'
+  },
+
+  15: {
+    image: '/images/budweiser-can-740mL.png',
+    containerType: 'can'
+  },
+
+  16: {
+    image: '/images/budweiser-can-pack-6.jpg',
+    containerType: 'pack'
+  },
+
+  17: {
+    image: '/images/budweiser-can-pack-12.png',
+    containerType: 'pack'
+  },
+
+  18: {
+    image: '/images/stellaartois-bottle-355mL.png',
+    containerType: 'bottle'
+  },
+
+  19: {
+    image: '/images/bavaria-holland-bottle-660mL.png',
+    containerType: 'bottle'
+  },
+
+  20: {
+    image: '/images/sapporo-can-330mL.png',
+    containerType: 'can'
+  },
+
+  21: {
+    image: '/images/sapporo-can-500mL.png',
+    containerType: 'can'
+  },
+
+  22: {
+    image: '/images/sapporo-can-pack-4-500mL.png',
+    containerType: 'pack'
+  },
+
+
 
 
 

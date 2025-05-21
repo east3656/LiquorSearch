@@ -3,7 +3,7 @@ body, html {
   font-family: sans-serif;
 }
 
-.main-area {
+.main-area { /*only the main div in App.jsx has this class, to permit resizing when sidebar is toggled.*/
   padding: 1rem 2rem;
   transition: margin-left 0.3s;
 }
@@ -29,10 +29,11 @@ body, html {
 }
 
 .liquor-card__img {
-  width: 100%;
-  height: auto;
+  width: 100% ;
+  height: 50%;
   border-bottom: 1px solid #eee;
   margin-bottom: 0.5rem;
+  object-fit: cover;
 }
 
 .liquor-card__name {

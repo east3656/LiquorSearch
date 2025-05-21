@@ -8,7 +8,7 @@ export default function Sidebar({ open, sections, selected, onSelect }) {
         {sections.map(sec => (
           <li
             key={sec}
-            className={`sidebar__item ${selected === sec ? 'active' : ''}`}
+            className={`sidebar__item ${selected === sec ? 'active' : ''}`} 
             onClick={() => onSelect(sec)}
           >
             {sec}
